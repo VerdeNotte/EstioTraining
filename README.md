@@ -1,0 +1,2 @@
+# EstioTraining
+Course information, rscripts
