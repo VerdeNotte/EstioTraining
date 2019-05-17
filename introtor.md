@@ -13,18 +13,33 @@ A basic concept in statistical programming is called a **variable**. A **variabl
 | Text or string values|    Characters   |   "Sue"|
 `class()`checks the class of the variable
 
-* Vector: One dimensional array. Must contain the same data type
-* Matrix: Two dimensional array. Contains rows and columns Must contain the same data Types
-* Arrays: Multi dimensional
-* DataFrame: Two dimensional objects - Within a column all elements must contain the same datatype but different columns can have different datatype
-* List: Allow you to gather a variety of objects under a name in an ordered way. These objects don' t have to be related to each other **super data type**
+| What    | Description | Datatype|
+| ------------- |:-------------:| -----:|
+ |Vectors| One dimensional array| Must contain the same data type|
+|Matrices| Two dimensional array| Contains rows and columns Must contain the same data Types|
+| Arrays | Multi dimensional|
+| DataFrame| Two dimensional objects| - Within a column all elements must contain the same datatype but different columns can have different datatype|
+| List| |Allow you to gather a variety of objects under a name in an ordered way. These objects don' t have to be related to each other **super data type**|
 
 ## Vector
 
-1. Assign variables
+1. Assign variables to a vector
 `vec <- c (1,2,3)`
+You must use  `<-c`
+When you type `vec` R should return
+`[1] 1 2 3`
+If you want to name a vector you can use the `names(vec)` function
 
-If you want to name a vector you can use the `names(v)`
+`player <-c ("Chess", "Gawain Jones", "England")`
+`names(player) <-c ("Profession", "Name", "Country")`
+`vector`
+
+> player <-c ("Chess", "Gawain Jones", "England")
+> names(player) <-c ("Profession", "Name", "Country")
+> player
+    Profession           Name        Country
+       "Chess" "Gawain Jones"      "England"
+
 
 ## Matrix
 
@@ -107,8 +122,6 @@ or:
 `levels (resultsfactor) <-c ("High Distinction", "Distinction", "Merit", "Pass", "Fail")`
 
 The order in which you assign the levels is important. If you don't specify R will automatically assign them alphabetically
-
-daysoftheweek`
 
 ### Summarizing a factor
 You can use the 'summary()'
