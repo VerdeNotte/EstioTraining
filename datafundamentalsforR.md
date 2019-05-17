@@ -1,6 +1,13 @@
-spreadsheetsinteger# Day 1
-R
+# Day 1
+R: Need to have R and R studio
+
 Follows Bodmas.
+* Brackets
+* Orders
+* Division and Multiplication (left to right)
+* Addition and Substraction
+(left to right)
+
 `#` comments, explain the code which the computer will ignore.
 
 **Always open a new Rscript**
@@ -26,13 +33,13 @@ logarithms - help us write numbers. They are the opposite of power. If we take t
 
 `log10 (1000)` is 3 because 10 x 10 x 10 = 1000
 
-..* Raw Data: Data thas has not been processed for use.
+* Raw Data: Data thas has not been processed for use.
 01010101
 
-..* Information:
+* Information:
 Processed data, organized. This is raw data with context.
 
-..* Knowledge:
+* Knowledge:
 Meaningful data to use and learn from. Data in context + visualization. Also the application of information and rules.
 
 ## Day 2
@@ -74,7 +81,7 @@ There are logical operators
 `OR` Required 1 criteria to be met
 `&` Requires both criteria to be met
 
-## Arrays
+### Arrays
 Arrays are like a grid of numbers (similar to a table) but they can have multiple dimensions
 
 `array()` can be used to restructure a vector as an array
@@ -85,7 +92,7 @@ A new array filed with zeros with 3 rows, 4 columns and 2 dimensions.
 
 A two dimensional array is known as a matrix.
 
-## DataFrames
+### DataFrames
 
 General form of a matrix like an excel spreadsheet.
 We index Data frames like vectors and

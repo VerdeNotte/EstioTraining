@@ -1,4 +1,4 @@
-# 16th May 2019 Basics of R
+ # 16th May 2019 Basics of R
 
 # Basic concepts of R
 A basic concept in statistical programming is called a **variable**. A **variable** allows you to store a value or an object. This means later on you'll be able to easily access the value or object you stored.
@@ -7,16 +7,17 @@ A basic concept in statistical programming is called a **variable**. A **variabl
 
 | Value       | Class| Example |
 | ------------- |:-------------:| -----:|
-| Decimal values (Double floating point) | Numeric | 2.3
+| Decimal values (Double precision floating point) | Numeric | 2.3
 | Natural number | Integer      |  5 |
 | Boolean values |Logical    |   TRUE or FALSE (T or F) |
 | Text or string values|    Characters   |   "Sue"|
 `class()`checks the class of the variable
 
-..* Vector: One dimensional array. Must contain the same data type
-..* Matrix: Two dimensional array. Contains rows and columns Must contain the same data Types
-..* DataFrame: Two dimesional objects - Within a column all elements must contain the same datatype but different columns can have different datatype
-..* List: Allow you to gather a variety of objects under a name in an ordered way. These objeects don' t have to be related to each other **super data type**
+* Vector: One dimensional array. Must contain the same data type
+* Matrix: Two dimensional array. Contains rows and columns Must contain the same data Types
+* Arrays: Multi dimensional
+* DataFrame: Two dimesional objects - Within a column all elements must contain the same datatype but different columns can have different datatype
+* List: Allow you to gather a variety of objects under a name in an ordered way. These objeects don' t have to be related to each other **super data type**
 
 ## Vector
 
