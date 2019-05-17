@@ -16,8 +16,8 @@ A basic concept in statistical programming is called a **variable**. A **variabl
 * Vector: One dimensional array. Must contain the same data type
 * Matrix: Two dimensional array. Contains rows and columns Must contain the same data Types
 * Arrays: Multi dimensional
-* DataFrame: Two dimesional objects - Within a column all elements must contain the same datatype but different columns can have different datatype
-* List: Allow you to gather a variety of objects under a name in an ordered way. These objeects don' t have to be related to each other **super data type**
+* DataFrame: Two dimensional objects - Within a column all elements must contain the same datatype but different columns can have different datatype
+* List: Allow you to gather a variety of objects under a name in an ordered way. These objects don' t have to be related to each other **super data type**
 
 ## Vector
 
@@ -159,3 +159,32 @@ If your columns have name you can use the `$` to choose the column within that d
 This piece of code:
 `dfname[nameofcolumn,]` or
 `subset(dfname, subset = some_condition)` More concise and understandable for people to read the code.
+
+## Lists
+
+Lists, as opposed to vectors, can hold components of different types, just like your to-do list at home or at work.
+
+A list in R allows you to gather a variety of objects under one name in an ordered way. These objects can be matrices, vectors, dataframes or even other lists.
+
+`newlist <- list(vector,matrix, dataframe)` Creates a List
+
+`names(newlist) <- ("name1", "name2")`Gives the components a name
+`newlist()`
+Rename your components wtihin the List
+
+### Selecting elements from a lists
+Lists are normally built out of numerous elements and components. Therefore getting a single element or multiple isn't always straight forward
+
+To grab the first component of a list you can type
+`newlist[[1]]`
+
+`newlist[["componentname"]]`
+or you could use the $
+`newlist$componentname`
+
+`newlist[[2]][1]` This would grab the 2nd component, 1st element.
+
+### Adding more tot he lists
+
+`ext_list` <- c (my_list, my_val)
+Conveniently adds elements to the lists

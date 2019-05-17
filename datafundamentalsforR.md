@@ -100,14 +100,14 @@ arrays.
 
 ## Day 3
 
-Lists: Can contain any type of data. It is also less structured
+### Lists: Can contain any type of data. It is also less structured
 
 Indexing is differently
 `a_list <- ('a string', 'as.interger')`
 `a_list[1]`
 `a_list[[1]]`
 
-factors:
+### Factors:
 
 Qualitative data with characteristics for example hair colour
 
