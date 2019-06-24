@@ -307,5 +307,118 @@ apply function over list or vector
 explicit specify output 
 
 
+Useful Functions
+
+seq(): Generate sequences, by specifying the from, to, and by arguments.
+rep(): Replicate elements of vectors and lists.
+sort(): Sort a vector in ascending order. Works on numerics, but also on character strings and logicals.
+rev(): Reverse the elements in a data structures for which reversal is defined.
+str(): Display the structure of any R object.
+append(): Merge vectors or lists.
+is.*(): Check for the class of an R object.
+as.*(): Convert an R object from one class to another.
+unlist(): Flatten (possibly embedded) lists to produce a vector.
+
+##### Regular Expression 
+
+Sequence of characters that form a search pattern to match strings.
+
+- patter existence
+- pattern replacement
+- pattern extraction
+
+- Cleans data
+
+grepl(), which returns TRUE when a pattern is found in the corresponding character string.
+grep(), which returns a vector of indices of the character strings that contains the pattern.
+Both functions need a pattern and an x argument, where pattern is the regular expression you want to match for, and the x argument is the character vector from which matches should be sought.
+
+
+`grepl (pattern = <regex> ,x = <string>)`
+
+Meta characters
+
+|Metacharacer|What it does  |
+|--|--|
+| `^` |matches first charachter  |
+|`$`| matches last character|
+|`|`| OR operator|
+|.*| which matches any character (.) zero or more times (*)
+|\\s| Match a space. The "s" is nromally a character|
+|[0-9]+| Match the numbers 0-9, at least once (+)|
+|([0-9]+)| Parenthesis are used to make parts of the matching string available to define the replacement|
+
+
+
+
+sub ()
+gsub()
+
+Like greply but also has a replacement argument
+
+### Times & Dates
+
+####  Create Date objects
+
+my_date <- as.Date()
+default data format, year - month - day (4,2,2)
+
+#### Create POSIXct objects
+
+my_time <- as.POSI
+
+#### Date arithmetic
+
+-   `%Y`: 4-digit year (2019)
+-   `%y`: 2-digit year (19)
+-   `%m`: 2-digit month (06)
+-   `%d`: 2-digit day of the month (24)
+-   `%A`: weekday (Monday)
+-   `%a`: abbreviated weekday (Mon)
+-   `%B`: month (June)
+-   `%b`: abbreviated month (Jun)
+
+`as.POSIXct()`
+-   `%H`: hours as a decimal number (00-23)
+-   `%I`: hours as a decimal number (01-12)
+-   `%M`: minutes as a decimal number
+-   `%S`: seconds as a decimal number
+-   `%T`: shorthand notation for the typical format  `%H:%M:%S`
+-   `%p`: AM/PM indicator
+
+### Intro to Tidyverse
+A collection of data science tools in R to help transform and visualise data.
+
+Every time you apply a verb, you will use a pipe `% %` 
+a pipe says "take whatever is before it and feed it into the next step"
+
+
+### dplyr package
+Filter verb () 
+`filter()`
+You can specify multiple conditions separated by a comma - these are called arguments
+
+
+`arrange (column
+)`
+`arrange (desc(column))`
+
+`filter (year == 2019) %>% 
+arrange (desc())`
+
+| dplyr | What they do  |
+|--|--|
+| filter |extracting a subset of observations  |
+|arrange|sorting by ASC order|
+|mutate|change or adds variables|
+
+### ggplot2
+
+code to create a graph:
+Data, mapping of variables in your data to aesthetics in your graph. An aesthetic is a visual dimension of a graph that can be used to communicate information. 
+
+`ggplot(data, aes (x = xaxis, y = yaxis)) + geom_point() + scale_x_log10()`
+using log spreads out the points on the x axis.
+
 
 
