@@ -412,6 +412,27 @@ arrange (desc())`
 |arrange|sorting by ASC order|
 |mutate|change or adds variables|
 
+
+### summarize verb
+
+`summarize()` turns many rows into one rows
+
+You can combine
+filter + summarize
+
+%>%
+
+- mean
+- sum
+- median
+- min
+- max
+
+### group_by verb
+use before summarize but after filter
+`group by` turns groups into one row each
+
+
 ### ggplot2
 
 code to create a graph:
@@ -419,6 +440,24 @@ Data, mapping of variables in your data to aesthetics in your graph. An aestheti
 
 `ggplot(data, aes (x = xaxis, y = yaxis)) + geom_point() + scale_x_log10()`
 using log spreads out the points on the x axis.
+
+
+* Scatter plots
+* Line plots - change over time
+* Bar plots - comparing stats for several 
+* Historgrams -distribution 
+* Box plots
+
+`geom_line()`
+
+`geom_col()` x = categorical variable, y = variable that determines the height of the bar
+
+`geom_histogram()` only one aes(x)
+binwidth 
+`geom_boxplot()` a simple way of representing statistical data on a plot in which a rectangle is drawn to represent the second and third quartiles, usually with a vertical line inside to indicate the median value. 
+`ggtitle("title name")` add's a title to the chart
+
+
 
 
 
